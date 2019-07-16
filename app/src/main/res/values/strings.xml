@@ -15,8 +15,8 @@
     <string name="person">Person</string>
     <string name="are_you_sure">Are you sure to delete this?</string>
     <string name="no_contacts">You have no Patients, add some.</string>
-    <string name="weight">Weight</string>
-    <string name="height">Height</string>
+    <string name="weight">Weight in Kgs</string>
+    <string name="height">Height in Centimeters</string>
     <string name="bloodgroup">Blood Group</string>
     <string name="invalid_blood">Invalid Blood Group</string>
     <string name="invalid_weight">Invalid Weight</string>
