@@ -37,7 +37,6 @@ public class EditPresenter implements EditContract.Presenter {
 
     @Override
     public boolean validate(Patients person) {
-//        mView.clearPreErrors();
         if (person.name.isEmpty() || !Util.isValidName(person.name)) {
             mView.showErrorMessage(Constants.FIELD_NAME);
             return false;
@@ -70,6 +69,7 @@ public class EditPresenter implements EditContract.Presenter {
             return false;
         }
 
+
         return true;
     }
 
@@ -94,7 +94,7 @@ public class EditPresenter implements EditContract.Presenter {
 
     @Override
     public void startWorkManager() {
-        // This wil uplao
+        // This wil uplaod data to the server periodically
         PeriodicWorkRequest compressionWork =
                 new PeriodicWorkRequest.Builder(MyWorker.class, 20, TimeUnit.MINUTES)
                         .build();

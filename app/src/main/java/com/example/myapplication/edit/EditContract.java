@@ -29,7 +29,6 @@ void startWorkManager();
 
         void showErrorMessage(int field);
 
-        void clearPreErrors();
 
         void openDateDialog();
 

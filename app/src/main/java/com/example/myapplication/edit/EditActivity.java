@@ -114,7 +114,7 @@ public class EditActivity extends AppCompatActivity implements EditContract.View
 
                 boolean valid = mPresenter.validate(patients);
 
-//                if (!valid) return;
+                if (!valid) return;
 
                 if (mEditMode) {
                     mPresenter.update(patients);
@@ -152,17 +152,6 @@ public class EditActivity extends AppCompatActivity implements EditContract.View
         }
     }
 
-    @Override
-    public void clearPreErrors() {
-        mNameTextInputLayout.setErrorEnabled(false);
-        mEmailInputLayout.setErrorEnabled(false);
-        mPhoneTextInputLayout.setErrorEnabled(false);
-        mAddressInputLayout.setErrorEnabled(false);
-        mBirthdayInputLayout.setErrorEnabled(false);
-        mWeightTextInputLayout.setErrorEnabled(false);
-        mHeightTextInputLayout.setErrorEnabled(false);
-        mBloodgroupTextInputLayout.setErrorEnabled(false);
-    }
 
     @Override
     public void openDateDialog() {
